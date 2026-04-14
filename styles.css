@@ -4,9 +4,7 @@
 body { font-family: 'Manrope', sans-serif; overflow-x: hidden; }
 h1, h2, h3, h4 { font-family: 'Noto Serif', serif; }
 
-/* Mobile-specific animations and effects */
 @media (max-width: 768px) {
-    /* Mobile hero animations */
     .mobile-hero-text {
         animation: mobileSlideUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         opacity: 0;
@@ -39,7 +37,6 @@ h1, h2, h3, h4 { font-family: 'Noto Serif', serif; }
         animation-delay: 0.9s;
     }
 
-    /* Mobile card hover effects */
     .mobile-card {
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -49,13 +46,11 @@ h1, h2, h3, h4 { font-family: 'Noto Serif', serif; }
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
-    /* Mobile button effects */
     .mobile-btn:active {
         transform: scale(0.95);
         transition: transform 0.1s ease;
     }
 
-    /* Mobile drawer animations */
     .mobile-drawer-enter {
         animation: mobileDrawerSlideIn 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
@@ -64,38 +59,32 @@ h1, h2, h3, h4 { font-family: 'Noto Serif', serif; }
         animation: mobileDrawerSlideOut 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
 
-    /* Mobile scroll animations */
     .mobile-scroll-fade-in {
         animation: mobileFadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
         opacity: 0;
         transform: translateY(20px);
     }
 
-    /* Mobile parallax effect */
     .mobile-parallax {
         will-change: transform;
         transform: translateZ(0);
     }
 
-    /* Mobile touch feedback */
     .touch-feedback:active {
         background-color: rgba(255, 255, 255, 0.1);
         transform: scale(0.98);
         transition: all 0.1s ease;
     }
 
-    /* Mobile loading animation */
     .mobile-loading {
         animation: mobilePulse 1.5s ease-in-out infinite;
     }
 
-    /* Mobile-specific hero section height */
     .hero-swiper {
         height: calc(var(--vh, 1vh) * 100);
         min-height: calc(var(--vh, 1vh) * 100);
     }
 
-    /* Mobile navigation improvements */
     .mobile-nav-link {
         transition: all 0.2s ease;
     }
@@ -106,7 +95,6 @@ h1, h2, h3, h4 { font-family: 'Noto Serif', serif; }
     }
 }
 
-/* Mobile keyframes */
 @keyframes mobileSlideUp {
     0% {
         opacity: 0;
@@ -165,7 +153,6 @@ h1, h2, h3, h4 { font-family: 'Noto Serif', serif; }
     }
 }
 
-/* Performance optimizations for mobile */
 @media (max-width: 768px) {
     * {
         -webkit-tap-highlight-color: transparent;
@@ -177,7 +164,6 @@ h1, h2, h3, h4 { font-family: 'Noto Serif', serif; }
         user-select: none;
     }
 
-    /* Re-enable text selection for content */
     p, span, h1, h2, h3, h4, h5, h6, div {
         -webkit-user-select: text;
         -khtml-user-select: text;
@@ -186,20 +172,17 @@ h1, h2, h3, h4 { font-family: 'Noto Serif', serif; }
         user-select: text;
     }
 
-    /* Smooth scrolling for mobile */
     html {
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
     }
 
-    /* Mobile-specific hover states */
     .mobile-hover:hover {
         transform: translateY(-2px);
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     }
 }
 
-/* Swiper Customizations */
 .swiper-pagination-bullet {
     background-color: rgba(255, 255, 255, 0.4) !important;
     opacity: 1;
@@ -208,14 +191,13 @@ h1, h2, h3, h4 { font-family: 'Noto Serif', serif; }
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .swiper-pagination-bullet-active {
-    background-color: #e9c176 !important; /* secondary-fixed-dim */
+    background-color: #e9c176 !important;
     width: 32px;
     border-radius: 4px;
 }
 .swiper-slide {
     transition: transform 0.5s ease;
 }
-/* Zoom effect on swiper slides for cinematic feel */
 .swiper-slide-active .hero-bg-img {
     transform: scale(1.05);
     transition: transform 6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -225,7 +207,6 @@ h1, h2, h3, h4 { font-family: 'Noto Serif', serif; }
     transition: transform 6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* Mobile swiper optimizations */
 @media (max-width: 768px) {
     .swiper-pagination-bullet {
         width: 6px !important;
@@ -236,7 +217,6 @@ h1, h2, h3, h4 { font-family: 'Noto Serif', serif; }
         width: 24px !important;
     }
 
-    /* Enable touch for mobile swiper */
     .hero-swiper {
         touch-action: pan-y;
     }

@@ -5,20 +5,15 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>M&amp;V Law Chambers | The Prestigious Counsel</title>
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     
-    <!-- Fonts and Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;0,900;1,400&family=Manrope:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     
-    <!-- Swiper CSS for Carousels -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     
-    <!-- AOS CSS for Scroll Animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
     
     <script id="tailwind-config">
@@ -112,7 +107,7 @@
 </head>
 <body class="bg-surface text-on-surface selection:bg-secondary/30 selection:text-primary">
 
-<!-- TopAppBar -->
+
 <header class="fixed top-0 w-full z-50 bg-[#fbf9f8]/80 dark:bg-[#041627]/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(4,22,39,0.06)] animate-nav-down">
     <div class="flex justify-between items-center px-8 py-4 max-w-full">
         <div class="flex items-center gap-3 group cursor-pointer">
@@ -139,8 +134,6 @@
                 CONSULTATION
             </button>
         </div>
-        
-        <!-- Mobile Menu Toggle -->
         <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-primary dark:text-[#fbf9f8] hover:bg-primary/5 rounded-lg transition-colors mobile-btn touch-feedback">
             <span class="material-symbols-outlined" data-icon="menu">menu</span>
         </button>
@@ -148,21 +141,18 @@
 </header>
 
 <main class="pt-20">
-    <!-- Hero Carousel Section -->
+    
     <section class="relative min-h-[100vh] lg:min-h-0 lg:h-[921px] flex items-center overflow-hidden bg-primary" id="hero">
         
-        <!-- Swiper Background Carousel -->
+        
         <div class="swiper hero-swiper absolute inset-0 w-full h-full">
             <div class="swiper-wrapper">
-                <!-- Slide 1 -->
                 <div class="swiper-slide relative">
                     <img alt="Prestigious Law Office" class="hero-bg-img w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoyyk8tXNfyPoh9H8Jao29O88jFdzl5YQhnDhaOcvQ92cE69x9o1fjNwP7fH8M7hR5ecoQ5wSHxXLdo324xk3DYCNZTR298ydFukXnzk3zGVJJsvmoMvGNu9r1e2DtQaYs0aBA3yZfbgQQCqh3ngLHqNhmtzD4E9hIHAEF0asCfzn9Wr6FKxE8CK_soHNutOpBUhR_Cc2Ccs4Lbpb5MCXLJ1hGRGwnv-74KtvXfLWodmszmwj1S_8Z7z2VHWE7iw6RffnRrs7yzHU"/>
                 </div>
-                <!-- Slide 2 -->
                 <div class="swiper-slide relative">
                     <img alt="Luxury Boardroom" class="hero-bg-img w-full h-full object-cover" src="../images/slider1.webp"/>
                 </div>
-                <!-- Slide 3 -->
                 <div class="swiper-slide relative">
                     <img alt="Legal Gavel" class="hero-bg-img w-full h-full object-cover" src="../images/slider3.avif"/>
                 </div>
@@ -171,14 +161,12 @@
            
             <div class="absolute inset-0 bg-black/30 z-10"></div>
             
-            <!-- Swiper Pagination -->
             <div class="swiper-pagination !bottom-12 z-30"></div>
         </div>
 
        
         <div class="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/70 to-transparent z-20"></div>
 
-        <!-- Hero Content Layer -->
         <div class="relative z-30 max-w-7xl mx-auto px-8 w-full pointer-events-none">
             <div class="max-w-2xl pointer-events-auto">
                 <span class="text-secondary font-label tracking-[0.3em] uppercase text-sm mb-6 block md:animate-hero-fade-in animate-hero-fade-in mobile-hero-subtitle" style="animation-delay: 0.3s;">
@@ -207,7 +195,6 @@
         </div>
     </section>
 
-    <!-- Our Legacy Section -->
     <section class="py-32 bg-surface overflow-hidden" id="legacy">
         <div class="max-w-7xl mx-auto px-8">
             <div class="grid grid-cols-12 lg:gap-12  items-center">
@@ -257,7 +244,6 @@
         </div>
     </section>
 
-    <!-- Practice Areas Grid -->
     <section class="py-32 bg-surface-container-low overflow-hidden" id="practice-areas">
         <div class="max-w-7xl mx-auto px-8">
             <div class="text-center mb-20" data-aos="fade-up">
@@ -267,7 +253,6 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 h-auto md:h-[800px]">
-                <!-- Maritime -->
                 <div class="md:row-span-2 min-h-[400px] bg-primary group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer mobile-card mobile-parallax" data-aos="fade-up" data-aos-delay="100">
                     <img alt="Maritime Law" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-110 group-hover:opacity-60 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcH8NumCLAbzqOM2DyNXRhrrIYPUsHorY3gGR_6GsZgAxp5nMfpSaGsGqVi0Fqsihm3IFnWgbCw_RKrbJ6lyj-7_u0VK-veO94WKoG3pt5JuykPoZ7jLzgkS4-JaGqj9Ll_yFii4-GnRAebFrqhjUsPodFnCYGh4ICCa6swpHc7v15r9FqZ2AcQ-fD7CG_GQ0yJx0lfM4BQ1KZt7QnTkExGMGpYzCADKtCeBVQn198K90OLP839labcgYwFNo_9j0cn-VIJiProxQ"/>
                     <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent group-hover:from-primary/90 transition-all duration-500"></div>
@@ -281,7 +266,6 @@
                     </div>
                 </div>
                 
-                <!-- Corporate -->
                 <div class="bg-surface-container-lowest group relative overflow-hidden rounded-2xl shadow-sm hover:shadow-xl border border-outline-variant/10 transition-all duration-500 hover:-translate-y-2 cursor-pointer mobile-card mobile-parallax" data-aos="fade-up" data-aos-delay="200">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-surface-container-high rounded-bl-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-700 ease-out z-0"></div>
                     <div class="p-10 flex flex-col h-full justify-between relative z-10">
@@ -294,7 +278,6 @@
                     </div>
                 </div>
                 
-                <!-- Litigation -->
                 <div class="bg-secondary group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-500 cursor-pointer mobile-card mobile-parallax" data-aos="fade-up" data-aos-delay="300">
                     <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.2),transparent_50%)]"></div>
                     <div class="p-10 flex flex-col h-full justify-between text-white relative z-10">
@@ -307,7 +290,6 @@
                     </div>
                 </div>
                 
-                <!-- Family & IP -->
                 <div class="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="bg-surface-container-lowest p-10 rounded-2xl shadow-sm hover:shadow-xl border border-outline-variant/10 group hover:-translate-y-2 transition-all duration-500 cursor-pointer mobile-card mobile-parallax" data-aos="fade-up" data-aos-delay="400">
                         <div class="flex justify-between items-start mb-6">
@@ -334,7 +316,6 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
     <section class="py-24 bg-surface" id="contact">
         <div class="max-w-5xl mx-auto px-8 text-center bg-primary p-16 rounded-3xl relative overflow-hidden shadow-[0_30px_60px_rgba(4,22,39,0.15)]" data-aos="zoom-in" data-aos-duration="1000">
             <div class="absolute inset-0 z-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
@@ -359,7 +340,7 @@
     </section>
 </main>
 
-<!-- Footer -->
+
 <footer class="bg-[#041627] dark:bg-[#020b14] w-full border-t border-[#fbf9f8]/10" data-aos="fade-in" data-aos-offset="0">
     <div class="flex flex-col items-center justify-center py-20 px-8">
         <div class="mb-12 text-center">
@@ -381,10 +362,9 @@
         </div>
     </div>
 </footer>
-<!-- Mobile Drawer Backdrop -->
+
 <div id="drawer-backdrop" class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-[60] hidden opacity-0 transition-opacity duration-300"></div>
 
-<!-- Side Navigation Drawer -->
 <div id="drawer" class="fixed right-0 top-0 h-full w-80 z-[70] bg-[#fbf9f8] dark:bg-[#041627] shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
     <div class="p-8 border-b border-surface-container flex justify-between items-center bg-surface-container-low">
         <span class="text-[#775a19] font-bold font-serif text-xl">MV Law Chambers</span>
@@ -417,7 +397,6 @@
     </div>
 </div>
 
-<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="script.js"></script>
